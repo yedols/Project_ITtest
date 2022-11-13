@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="KYW, OJW">
+        <meta name="keywords" content="IT 분야 찾기 TEST">
+        <meta name="description" content="IT 분야 찾기 TEST">
+
+        <!-- sns share -->
+        <meta property="og:url" content="https://ittypetest.netlify.app" />
+        <meta property="og:title" content="나의 IT 분야 찾기" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="img/share-image.png" />
+        <meta property="og:description" content="간단한 테스트로 알아보는 나의 IT 유형" />
+
+        <!-- 상단 아이콘 생성 -->
+        <link rel="shortcut icon" href="IMG/title.ico">
+        <link rel="apple-touch-icon-precomposed" href="IMG/title.ico">
+
+        <title>나의 IT 분야 찾기 TEST</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./CSS/default.css">
+        <link rel="stylesheet" href="./CSS/main.css">
+        <link rel="stylesheet" href="./CSS/question.css">
+        <link rel="stylesheet" href="./CSS/animation.css">
+        <link rel="stylesheet" href="./CSS/Result.css">
+    </head>
+    <body> 
+        <div class="container">
+            <section id="main" class="mx-auto my-5 py-5 px-3">
+                <h1>나의 IT 분야 찾기</h1>
+                <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+                    <img src="./IMG/main.png" alt="mainImage" id = "mainImg" class="img-fluid" >
+                </div>
+                <p>
+                    IT TEST를 시작하시려면 밑에 start 버튼을 눌러주세요.
+                </p>
+                <button type="button" class="btn btn-outline-white" 
+                onclick="js:begin()">START</button>
+            </section>
+            
+            <!--question-->
+            <section id="qna">
+                <div class="status mx-auto mt-5">
+                    <div class="statusBar">
+                    </div>
+                </div>
+                <div class="qBox my-5 py-3 mx-auto">
+
+                </div>
+                <div class="answerBox">
+                
+                </div>
+            </section>
+
+            <!--Result-->
+            <section id="result" class="mx-auto my-5 py-5 px-3">
+                <h1>내 IT분야는? </h1>
+                <div class="resultname">
+
+                </div>
+                <div id="resultImage" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+                    
+                </div>
+                <div class="resultDesc">
+
+                </div>
+                <button type="button" class="kakao mt-5 py-2 px-3"> 내 결과 공유하기</button>
+            </section>
+            <script src="./JS/data.js" charset="utf-8"></script>
+            <script src="./JS/start.js" charset="utf-8"></script>
+        </div>
+    </body>
+</html>
